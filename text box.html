@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text box updated</title>
+</head>
+<style>
+#input{
+     width: ;
+     height: ;
+     font-size: ;
+     color: ;
+     background-color: ;
+     border-radius: ;     
+}
+
+#input.hover{
+    cursor: all-scroll;
+    transition-duration: 5ms;
+    color: rgba(0, 0, 0, .5);
+    background-color: aqua;
+    
+}
+
+</style>
+<body>
+    <div id="input">
+        <input type="text" placeholder="Entr your name" id="name">;
+        <input type="text" placeholder="Entr your image" id="image">;
+        <input type="text" placeholder="Entr your about" id="about">;
+        <input type="text" placeholder="Entr your bio" id="bio">;
+<button onclick = "updatedBio ()">Enter</button>
+    </div>
+    <div id="output">
+        <h1 id="h1">Name</h1>
+        <img src="" alt="Image to be come" id="linkimage">
+        <h1 id="h2">About</h1>
+        <h1 id="h3">Bio</h1>
+    </div>
+</body>
+<script>
+    function updatedBio () {
+        let name = document.getElementById("name").value;
+        let image = document.getElementById("image").value;
+        let about = document.getElementById("about").value;
+        let bio = document.getElementById("bio").value;
+
+        document.getElementById("h1").innerHTML = Name;
+        document.getElementById("h2").innerHTML = About;
+        document.getElementById("h3").innerHTML = Bio;
+        document.getElementById("src").src = image;
+
+    }
+</script>
+</html>

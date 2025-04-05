@@ -1,0 +1,62 @@
+div {
+    width: 40%;
+    font-size: medium;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(201, 23, 68);
+    color: white;
+    border-radius: 20px;
+    border: 3px solid rgba(12, 12, 12, 0.932);
+    padding-bottom: 30px;
+    padding-left: 20px;
+    margin-top: 10%;
+
+
+
+}
+
+button {
+
+    background-color: rgb(12, 12, 12);
+    color: aliceblue;
+    /* border: 3px salmon solid; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(218, 215, 214);
+    transition: 0.2s;
+    width: 10%;
+    margin-top: 5%;
+
+}
+
+input {
+
+    width: 50%;
+    border: black solid;
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://www.topgear.com/sites/default/files/images/gallery-migration/2015-05/1FE0C65E-B0F5-4E64-9145-E585E9EC0FF0.jpg?w=1654&h=930);
+
+}
+
+::placeholder {
+
+    text-align: center;
+    color: blueviolet;
+    margin-top: 10%;
+
+
+}

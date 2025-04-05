@@ -1,0 +1,61 @@
+.Bag {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.shirt{
+    font-size: medium;
+    color: black;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    transition: (0.5);
+    border-radius: 5px;
+    border: 5px;px; color: rgb(209, 23, 23);
+    border-style: solid;    
+    
+}
+
+
+.shirt:hover{
+
+    cursor: all-scroll;
+    transform: scale(1.2);
+    background-color: cadetblue;
+}
+
+.shirt img{
+    width: 200px;
+    height: 300px;
+}
+
+header{
+    background-color: aqua;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+
+}
+
+#id{
+
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+footer{
+    background-color: aqua;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+
+}

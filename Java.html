@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="h">welcome to Home</h1>
+    <button id ="in">on</button>
+    <button id ="out">off</button>
+    
+</body>
+
+<script>
+    let a = "yes come in home"
+    let b = "get out in home"
+
+    document.getElementById("in").onclick = function () {
+        document.getElementById("h").innerHTML = a;
+    }
+
+    document.getElementById("out").onclick = function () {
+        document.getElementById("h").innerHTML = b;
+    }
+</script>
+
+</html>

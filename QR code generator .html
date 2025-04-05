@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+     
+    }
+
+    .container {
+        background-color: rgb(179, 255, 0);
+        padding: 20px 30px;
+        border-radius: 20px;
+        border: solid;
+        border-color: rgb(25, 0, 255);       
+        width: 500px;
+        height: 300px;
+        text-align: center;    
+    }
+
+    #qrcode {
+
+        padding-top: 30px;
+       justify-items: center;
+
+    }
+
+    button {
+
+        background-color: chartreuse;
+        color: rgb(3, 3, 3);
+        border-radius: 25px;
+        font-size: small;
+        width: 120px;
+        height: 30px;
+    }
+#text{
+
+    width: 250px;
+    height: 50px;
+    color: brown;
+    border-radius: 10px;
+    border: solid;
+    text-align: center;
+    font-size: larger;
+
+}
+
+h1 {
+
+    color: rgb(0, 47, 255);
+    padding-bottom: 20px;
+
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <h1> QR code creater </h1>
+        <input type="text" id="text" placeholder="Enter text or URL" />
+        <button onclick="generateQRCode()"> Generate codes </button>
+        <div id="qrcode">
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        function generateQRCode() {
+            const textt = document.getElementById("text").value;
+            const qrCodeContainer = document.getElementById("qrcode");
+            qrCodeContainer.innerHTML = "";
+
+            if (textt.trim() !== "") {
+                new QRCode(qrCodeContainer, { text: textt, width: 100, height: 100 });
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
