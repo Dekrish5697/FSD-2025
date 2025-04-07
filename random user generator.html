@@ -8,17 +8,20 @@
 </head>
 
 <body>
+    <div>
     <h1>Random user generator </h1>
     <div id="user">
 
     </div>
-    <button onclick="fetchData()"> Get user </button>
+    <button onclick="fetchData()">Get user</button>
+</div>
+
     <script>
-        let userContainer = dcocument.getElementById("user");
+        let userContainer = document.getElementById("user");
         async function fetchData() {
             try {
 
-                let response = await fecth("https://randomuser.me/api/");
+                let response = await fetch("https://randomuser.me/api/");
                 let data = await response.json();
                 let userData = data.results[0];
                 let name = `${userData.name.title} ${userData.name.first} ${userData.name.last} `
@@ -27,7 +30,7 @@
             }
 
             catch (error) {
-                console.log(err);
+                console.log(error);
             }
 
         }
